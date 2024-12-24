@@ -63,32 +63,38 @@ The project includes scripts for compiling, running, and generating code coverag
 Configuration files are provided for code formatting, code analysis, and Visual Studio Code settings.
 
 ## Usage
-1- Compile the Program:
+
+1. Compile the Program:   
 ```
 EnrollmentSystem es;
 es.addUniversity("UWB");
 ```
 Use the provided runit.sh script to compile and run the program:
+
 2. Run the Program:
 ```
 ./runit.sh
 ```
 After compilation, the program can be executed directly:
+
 3. Test the Program:
 ```
 ./a.out
 ```
 The main.cpp file contains test cases that verify the functionality of the enrollment system. Running the program will execute these tests and output the results.
+
 4. Generate Code Coverage Report:
 ```
 ./check-code-coverage.sh
 ```
 Use the check-code-coverage.sh script to compile the program with code coverage flags and generate a coverage report:
+
 5. Create Output File:
 ```
 ./create-output.sh > output.txt 2>&1
 ```
 Use the create-output.sh script to compile the program, run it, and generate an output file with various information such as compilation warnings, program output, clang-tidy warnings, clang-format warnings, memory leak issues, and code coverage information:
+
 6. Debugging:
 Use the provided launch.json configuration to debug the program in Visual Studio Code. Set breakpoints and run the debugger to step through the code.
 
